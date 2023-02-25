@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div.main{
+            width: 400px;
+            margin: 50px auto 0px auto;
+            background-color:white;
+            border-color: orange;
+            border: 2px solid orange;
+            border-radius: 5px;
+        }
+        h2{
+            text-align: center;
+            padding: 20px;
+        }
+        body{
+            background-image: url(./images/pexels-andrea-piacquadio-3760067.jpg);
+            background-size: cover;
+        }
+        p{
+            text-align: center;
+            padding: 20px;
+        }
+        input#text{
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            outline: 0;
+            padding: 7px;
+        }
+        form#register{
+            margin: 30px;
+            
+        }
+        input{
+            text-align: center;
+            width: 350px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav style="color: orange; font-size: 20px;">Sharpner.Tech</nav>
+  <div class="main">
+    <div class="register">
+        
+        <h2 style="color: orange;">BOOK A CALL</h2>
+        <p>book your call and our representative call you back</p><hr>
+        <form action="#" onsubmit="registerUser">
+            <label for="">NAME:</label><br>
+            <input type="text" id="name" placeholder="Enter your name" required><br><br>
+            <label for="">EMAIL:</label><br>
+            <input type="email" id="mail" placeholder="Enter your email" required><br><br>
+            <label for="">PHONE:</label><br>
+            <input type="number" id="number" placeholder="Enter YOUR PHONE No" required><br><br>
+            <label for="">TIME FOR CALL:</label><br>
+            <input type="date" required>
+            <input type="time" required><br><br>
+            <input type="submit" value="GET A CALL" style="width: 350px; background-color: orange;">
+        </form>
+    </div>
+  </div>
+</body>
+<script>
+    function registerUser(){
+     
+     var nm = document.getElementById('name').value;
+     var nm1 = document.getElementById('mail').value;
+     var nm2 = document.getElementById('number').value;
+     console.log(nm);
+     console.log(nm1);
+     console.log(nm2);
+ }
+ </script>
+ 
+</html>
